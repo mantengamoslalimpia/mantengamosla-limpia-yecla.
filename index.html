@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mantengámosla Limpia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: rgba(0, 100, 0, 0.8);
+      padding: 20px;
+      font-size: 2em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .circle-container {
+      position: relative;
+      margin: 100px auto;
+      width: 300px;
+      height: 300px;
+      background-color: rgba(0, 128, 0, 0.7);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .idea {
+      position: absolute;
+      width: 150px;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: black;
+      padding: 8px;
+      border-radius: 10px;
+      font-size: 0.9em;
+      font-weight: bold;
+    }
+
+    /* Colocación circular mejorada */
+    .idea:nth-child(1) { top: -80px; left: 75px; }
+    .idea:nth-child(2) { top: 20px; right: -160px; }
+    .idea:nth-child(3) { bottom: 20px; right: -140px; }
+    .idea:nth-child(4) { bottom: -80px; left: 75px; }
+    .idea:nth-child(5) { bottom: 20px; left: -160px; }
+    .idea:nth-child(6) { top: 20px; left: -160px; }
+    .idea:nth-child(7) { top: -80px; right: 75px; }
+    .idea:nth-child(8) { bottom: -80px; right: 75px; }
+
+    button {
+      margin-top: 50px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+      font-size: 1em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      margin-top: 60px;
+      background-color: rgba(0, 100, 0, 0.8);
+      padding: 15px;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <header>Mantengámosla Limpia</header>
+
+  <div class="circle-container">
+    ¿Cómo mantener limpia Yecla?
+
+    <div class="idea">No tirar basura</div>
+    <div class="idea">Reciclar</div>
+    <div class="idea">Reutilizar</div>
+    <div class="idea">Reducir</div>
+    <div class="idea">Usar transporte público</div>
+    <div class="idea">Caminar más</div>
+    <div class="idea">Usar bicicleta</div>
+    <div class="idea">Recoger heces de los perros</div>
+  </div>
+
+  <a href="participar.html"><button>Quiero participar</button></a>
+
+  <footer>Creadores: Sergio, Álvaro y Aymar</footer>
+</body>
+</html>
