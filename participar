@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Participa - Mantengámosla Limpia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1493810329807-2ee71abd90c0?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      background-color: rgba(0, 100, 0, 0.8);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    form {
+      background-color: rgba(0, 128, 0, 0.8);
+      padding: 25px;
+      border-radius: 10px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    a {
+      color: white;
+      margin-top: 20px;
+      display: inline-block;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Participa en "Mantengámosla Limpia"</h1>
+  <form>
+    <input type="text" placeholder="Tu nombre" required>
+    <input type="email" placeholder="Tu correo electrónico" required>
+    <button type="submit">Enviar</button>
+  </form>
+  <a href="index.html">⬅ Volver a la página principal</a>
+</body>
+</html>
