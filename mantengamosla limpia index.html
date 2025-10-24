@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mantengámosla Limpia</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+  }
+
+  header {
+    background: rgba(0, 100, 0, 0.8);
+    padding: 20px;
+    width: 100%;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin-top: 50px;
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    color: #006400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .idea {
+    width: 160px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.85);
+    color: #006400;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    padding: 10px;
+  }
+
+  /* Posiciones alrededor del círculo */
+  .idea1 { top: 0; left: 50%; transform: translate(-50%, -50%); }
+  .idea2 { top: 12%; right: 0; transform: translate(50%, -50%); }
+  .idea3 { top: 50%; right: 0; transform: translate(50%, -50%); }
+  .idea4 { bottom: 12%; right: 0; transform: translate(50%, 50%); }
+  .idea5 { bottom: 0; left: 50%; transform: translate(-50%, 50%); }
+  .idea6 { bottom: 12%; left: 0; transform: translate(-50%, 50%); }
+  .idea7 { top: 50%; left: 0; transform: translate(-50%, -50%); }
+  .idea8 { top: 12%; left: 0; transform: translate(-50%, -50%); }
+
+  /* Botón */
+  .btn {
+    background: #228B22;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 50px 0;
+    transition: 0.3s;
+  }
+
+  .btn:hover { background: #32CD32; }
+
+  footer {
+    width: 100%;
+    background: rgba(0, 100, 0, 0.8);
+    padding: 15px;
+    font-weight: bold;
+    position: relative;
+    bottom: 0;
+  }
+
+  @media (max-width: 700px) {
+    .container {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .idea {
+      position: static;
+      margin: 10px;
+    }
+    .circle {
+      position: relative;
+      left: auto;
+      top: auto;
+      transform: none;
+      margin-bottom: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>Mantengámosla limpia</header>
+
+<div class="container">
+  <div class="circle">¿Cómo mantener limpia Yecla?</div>
+
+  <div class="idea idea1">No tirar basura al suelo</div>
+  <div class="idea idea2">Reciclar correctamente</div>
+  <div class="idea idea3">Reutilizar materiales</div>
+  <div class="idea idea4">Reducir el consumo</div>
+  <div class="idea idea5">Usar bicicleta o caminar</div>
+  <div class="idea idea6">Usar transporte público</div>
+  <div class="idea idea7">Recoger las heces de los perros</div>
+  <div class="idea idea8">Cuidar los parques y plantas</div>
+</div>
+
+<a href="participar.html" class="btn">Quiero participar</a>
+
+
+<footer>Creadores: Sergio, Álvaro y Aymar</footer>
+
+</body>
+</html>
